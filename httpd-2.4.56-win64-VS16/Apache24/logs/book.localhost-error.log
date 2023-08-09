@@ -8,3 +8,4 @@
 [Wed Aug 09 14:15:29.110659 2023] [php7:error] [pid 5312:tid 1180] [client ::1:62013] PHP Parse error:  syntax error, unexpected '=' in C:\\MES\\MES\\home_htdocs\\book.localhost\\public_html\\ch1\\hello.php on line 2
 [Wed Aug 09 14:15:29.514208 2023] [php7:error] [pid 5312:tid 1180] [client ::1:62013] PHP Parse error:  syntax error, unexpected '=' in C:\\MES\\MES\\home_htdocs\\book.localhost\\public_html\\ch1\\hello.php on line 2
 [Wed Aug 09 14:53:58.284135 2023] [php7:error] [pid 5312:tid 1180] [client ::1:63715] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO), expecting ';' or ',' in C:\\MES\\MES\\home_htdocs\\book.localhost\\public_html\\ch2\\echo.php on line 14
+[Wed Aug 09 15:11:01.193351 2023] [php7:notice] [pid 7408:tid 1172] [client ::1:64448] PHP Notice:  Undefined variable: name\xeb\x8b\x98 in C:\\MES\\MES\\home_htdocs\\book.localhost\\public_html\\ch2\\quot3.php on line 3
