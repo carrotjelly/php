@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "*.html" : "php",
+        "*.inc" : "php",
+        "*.htm" : "php",
+
+    },
+    "editor.wordWrap": "on"
+
+}
