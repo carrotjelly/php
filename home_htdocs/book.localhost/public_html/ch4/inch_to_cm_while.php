@@ -6,17 +6,14 @@
     <title>Document</title>
 </head>
 <style>
-    table{
-        border-collapse: collapse;
-    }
+  
     td,th{
         width: 80px;
-        border: 1px solid black;
         text-align: center;
     }
 </style>
 <body>
-    <table>
+    <table border = "1">
         <tr>
             <th>인치</th>
             <th>센티미터</th>
