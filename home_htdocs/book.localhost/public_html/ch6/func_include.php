@@ -1,12 +1,12 @@
 <?php
 function sum($a, $b)
 {
-    $sum = 0;
+    $total = 0;
     while ($a <= $b) {
-        $sum += $a;
+        $total += $a;
         $a++;
     }
-    return $sum;
+    return $total;
 }
 function sum_f($a, $b, $num)
 {
