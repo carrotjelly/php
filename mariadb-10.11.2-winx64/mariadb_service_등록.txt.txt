@@ -1,0 +1,61 @@
+cd C:\MES\MES\mariadb-10.11.2-winx64\mariadb-10.11.2-winx64\bin
+
+//처음 1 회 실행
+mysql_install_db --datadir=C:\MES\MES\mariadb-10.11.2-winx64\database_mysql_var --service=mariaDB --port=3306 --password = qwer1234
+
+윈도우 서비스 삭제시:
+sc delete mariaDB
+
+윈도우 서비스 등록:
+텍스트 파일 열어서 경로 맞추기
+"C:/MES/MES/mariadb-10.11.2-winx64/database_mysql_var\my.ini"
+
+cmd에서 실행
+
+mysqld --install "mariaDB" --defaults-file="C:/MES/MES/mariadb-10.11.2-winx64/database_mysql_var\my.ini"
+
+서비스에서 "mariaDB" 실행
+
+mysql -uroot -p
+qwer1234
+
+MariaDB [(none)]> create database booklocalhost default character set utf8;
+
+MariaDB [(none)]> create user 'booklocalhost'@'localhost' identified by 'qwer1234';
+
+MariaDB [(none)]> grant all privileges on booklocalhost.* to 'booklocalhost'@'localhost';
+
+MariaDB [(none)]> flush privileges;
+
+MariaDB [(none)]> exit;
+
+mysql -ubooklocalhost -p
+qwer1234
+
+MariaDB [(none)]> use booklocalhost;
+
+create table mem(
+	num int not null auto_increment,
+	id char(20) not null,
+	pass char(20) not null,
+	name char(20) not null,
+	age int,
+	primary key(num)
+);
+
+show tables;
+desc mem;
+
+필드 추가 : alter table mem add email char(30);
+
+필드 삭제 : alter table mem drop email;
+
+필드 수정 : alter table mem change age phone char(20);
+
+데이터 타입 수정 : alter table mem modify phone int;
+
+테이블명 변경 : alter table mem rename mem2;
+
+
+
+

@@ -1,0 +1,17 @@
+friend.sql 파일 생성
+cmd
+
+mysql -ubooklocalhost -p booklocalhost < C:\MES\MES\home_htdocs\book.localhost\public_html\database_sql\friend.sql
+
+qwer1234
+
+mysql -ubooklocalhost -p
+
+use booklocalhost
+
+show tables;
+
+
+source mysql -ubooklocalhost -p booklocalhost < C:\MES\MES\home_htdocs\book.localhost\public_html\database_sql\member.sql
+
+source mysql -ubooklocalhost -p booklocalhost < C:\MES\MES\home_htdocs\book.localhost\public_html\database_sql\member_data.sql

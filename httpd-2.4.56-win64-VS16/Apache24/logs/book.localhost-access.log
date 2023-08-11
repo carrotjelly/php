@@ -392,3 +392,43 @@
 ::1 - - [10/Aug/2023:17:45:13 +0900] "-" 408 -
 ::1 - - [10/Aug/2023:17:45:34 +0900] "GET /ch8/cookie_use.php HTTP/1.1" 200 57
 ::1 - - [10/Aug/2023:17:46:34 +0900] "-" 408 -
+::1 - - [11/Aug/2023:14:25:20 +0900] "GET /ch8/cookie_set.php HTTP/1.1" 200 85
+::1 - - [11/Aug/2023:14:25:20 +0900] "GET /favicon.ico HTTP/1.1" 404 196
+::1 - - [11/Aug/2023:14:25:24 +0900] "GET /ch8/cookie_set.php HTTP/1.1" 200 85
+::1 - - [11/Aug/2023:14:25:30 +0900] "GET /ch8/cookie_del.php HTTP/1.1" 200 407
+::1 - - [11/Aug/2023:14:25:40 +0900] "GET /ch8/cookie_del.php HTTP/1.1" 200 215
+::1 - - [11/Aug/2023:14:25:41 +0900] "GET /ch8/cookie_del.php HTTP/1.1" 200 215
+::1 - - [11/Aug/2023:14:25:42 +0900] "GET /ch8/cookie_del.php HTTP/1.1" 200 215
+::1 - - [11/Aug/2023:14:25:43 +0900] "GET /ch8/cookie_del.php HTTP/1.1" 200 215
+::1 - - [11/Aug/2023:14:25:44 +0900] "GET /ch8/cookie_del.php HTTP/1.1" 200 215
+::1 - - [11/Aug/2023:14:25:45 +0900] "GET /ch8/cookie_del.php HTTP/1.1" 200 215
+::1 - - [11/Aug/2023:14:26:01 +0900] "GET /ch8/cookie_del.php HTTP/1.1" 200 215
+::1 - - [11/Aug/2023:14:26:02 +0900] "GET /ch8/cookie_del.php HTTP/1.1" 200 215
+::1 - - [11/Aug/2023:14:26:02 +0900] "GET /ch8/cookie_del.php HTTP/1.1" 200 215
+::1 - - [11/Aug/2023:14:26:02 +0900] "GET /ch8/cookie_del.php HTTP/1.1" 200 215
+::1 - - [11/Aug/2023:14:26:04 +0900] "GET /ch8/cookie_del.php HTTP/1.1" 200 215
+::1 - - [11/Aug/2023:14:26:04 +0900] "GET /ch8/cookie_del.php HTTP/1.1" 200 215
+::1 - - [11/Aug/2023:14:26:13 +0900] "GET /ch8/cookie_del.php HTTP/1.1" 200 259
+::1 - - [11/Aug/2023:14:26:14 +0900] "GET /ch8/cookie_del.php HTTP/1.1" 200 259
+::1 - - [11/Aug/2023:14:26:17 +0900] "GET /ch8/cookie_set.php HTTP/1.1" 200 85
+::1 - - [11/Aug/2023:14:26:22 +0900] "GET /ch8/cookie_del.php HTTP/1.1" 200 259
+::1 - - [11/Aug/2023:14:26:44 +0900] "GET /ch8/cookie_set.php HTTP/1.1" 200 85
+::1 - - [11/Aug/2023:14:26:44 +0900] "GET /ch8/cookie_set.php HTTP/1.1" 200 85
+::1 - - [11/Aug/2023:14:26:52 +0900] "GET /ch8/cookie_use.php HTTP/1.1" 200 57
+::1 - - [11/Aug/2023:14:26:55 +0900] "GET /ch8/cookie_del.php HTTP/1.1" 200 259
+::1 - - [11/Aug/2023:14:26:57 +0900] "GET /ch8/cookie_use.php HTTP/1.1" 200 57
+::1 - - [11/Aug/2023:14:27:52 +0900] "-" 408 -
+::1 - - [11/Aug/2023:14:37:09 +0900] "GET /ch8/cookie_set.php HTTP/1.1" 200 132
+::1 - - [11/Aug/2023:14:37:15 +0900] "GET /ch8/cookie_set.php HTTP/1.1" 200 136
+::1 - - [11/Aug/2023:14:38:15 +0900] "-" 408 -
+::1 - - [11/Aug/2023:14:40:08 +0900] "GET /ch8/cookie_set.php HTTP/1.1" 200 136
+::1 - - [11/Aug/2023:14:40:10 +0900] "GET /ch8/cookie_use.php HTTP/1.1" 200 112
+::1 - - [11/Aug/2023:14:41:08 +0900] "-" 408 -
+::1 - - [11/Aug/2023:14:47:11 +0900] "GET /ch8/cookie_set.php HTTP/1.1" 200 136
+::1 - - [11/Aug/2023:14:47:13 +0900] "GET /ch8/cookie_use.php HTTP/1.1" 200 112
+::1 - - [11/Aug/2023:14:47:14 +0900] "GET /ch8/cookie_del.php HTTP/1.1" 200 296
+::1 - - [11/Aug/2023:14:47:16 +0900] "GET /ch8/cookie_del.php HTTP/1.1" 200 296
+::1 - - [11/Aug/2023:14:47:20 +0900] "GET /ch8/cookie_del.php HTTP/1.1" 200 300
+::1 - - [11/Aug/2023:14:47:21 +0900] "GET /ch8/cookie_del.php HTTP/1.1" 200 300
+::1 - - [11/Aug/2023:14:47:23 +0900] "GET /ch8/cookie_use.php HTTP/1.1" 200 256
+::1 - - [11/Aug/2023:14:48:11 +0900] "-" 408 -
