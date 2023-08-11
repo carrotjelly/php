@@ -15,3 +15,34 @@ show tables;
 source mysql -ubooklocalhost -p booklocalhost < C:\MES\MES\home_htdocs\book.localhost\public_html\database_sql\member.sql
 
 source mysql -ubooklocalhost -p booklocalhost < C:\MES\MES\home_htdocs\book.localhost\public_html\database_sql\member_data.sql
+
+
+검색
+select name,gender from member where "";
+
+[예제 10-1] 여성 회원의 아이디, 이름, 주소, 성별 검색
+MariaDB [(none)]> select id,name,address,gender from member where gender like 'W';
+
+[예제 10-2] 50세 이상인 남성 회원의 이름, 전화번호, 성별, 나이 검색
+MariaDB [(none)]> select name,tel,gender,age from member where gender like 'M' and age >= 50;
+
+[예제 10-3] 20대 회원의 이름, 성별, 주소, 나이 검색
+MariaDB [(none)]> select name,gender,address,age from member where age >= 20 and age <30;
+
+[예제 10-4] 30대 또는 50대 남성 회원의 이름, 전화번호, 나이, 성별 검색
+MariaDB [(none)]>  select name,tel,age,gender from member where gender = 'M' and (age >= 30 and age <40) or (age >= 50 and age < 60);
+
+[예제 10-5] 이름이 ‘안철영’인 회원의 일련번호, 이름, 전화번호, 주소, 우편번호, 나이, 성별 검색
+MariaDB [(none)]> select num,name,tel,address,post_num,age,gender from member where name = '안철영';
+
+
+특정문자열 검색
+select name,gender from member where name like "%%";
+[예제 10-6] 성이 박씨인 회원의 이름, 전화번호 검색
+MariaDB [(none)]> select name,tel from member where name like "박%";
+
+[예제 10-7] 서울에 거주하는 회원의 일련번호, 이름, 주소, 성별 검색
+MariaDB [(none)]> select num,name,address,gender from member where address like "서울%";
+
+[예제 10-8] 은평구에 거주하는 회원의 모든 정보 검색
+MariaDB [(none)]> select * from member where address like "%은평구%";
