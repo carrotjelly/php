@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<meta charset="utf-8">
+<title>MYUNGLI 실습예제</title>
+<?php include "head.html";?>
+<link rel="stylesheet" type="text/css" href="./css/msg.css">
+</head>
+<body> 
+<header>
+    <?php include "header.html";?>
+</header>  
+<section class="fontstyle">
+   	<div id="msg_box">
+	    <h3>송신 메시지함</h3>
+	    <div>
+	    	<table id="mytable">
+	    		<colgroup>
+	    			<col width="10%">
+	    			<col width="55%">
+	    			<col width="15%">
+	    			<col width="20%">
+	    		</colgroup>
+				<thead>
+				<tr>
+					<th class="col1">번호</th>
+					<th class="col2">제목</th>
+					<th class="col3">받은이</th>
+					<th class="col4">송신일</th>
+				</tr>
+				</thead>
+				<tbody>
+				<tr>
+					<td class="td_1">1</td>
+					<td class="td_2">메세지함 입니다.</td>
+					<td class="td_3">홍길동</td>
+					<td class="td_4">2023-08-01</td>
+				</tr>
+				<tr>				
+					<td colspan="6">메세지가 없습니다.</td>
+				</tr>
+				</tbody>
+	    	</table>
+			<ul id="search_box">
+				<li><select name="search_key" id="search_name">
+					<option value="1">통합검색</option>
+					<option value="2">제목</option>
+					<option value="3">받은이</option>
+					<option value="4">등록일</option>
+					<option value="5">내용</option>
+				</select>&nbsp;
+				<input type="text" name="search_text" id="search_text">&nbsp;
+				<input type="button" value="검색" id="search"></li>
+			</ul>
+			<ul class="buttons">
+				<li><button class="fontstyle" onclick="location.href='msg_box.html?mode=rv'">수신 메시지함</button></li>
+				<li><button class="fontstyle" onclick="location.href='msg_box.html?mode=send'">송신 메시지함</button></li>
+				<li><button class="fontstyle" onclick="location.href='msg_form.html'">메시지 전송</button></li>
+			</ul>
+		</div>
+	</div> <!-- msg_box -->
+</section> 
+<footer>
+    <?php include "footer.html";?>
+</footer>
+</body>
+</html>

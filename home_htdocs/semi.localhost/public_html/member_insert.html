@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<?php
+    $u_id = $_POST['u_id'];
+    $u_pass = $_POST['u_pass'];
+    $u_name = $_POST['u_name'];
+    $email1 = $_POST['email1'];
+    $email2 = $_POST['email2'];
+
+    $email = $email1."@".$email2;
+    $regist_day = date("Y-m-d (H:i)");
+
+    include "../inc_con/db_connect.html";
+
+    $sql = "insert into members(id, pass, name, email, regist_day, level, point) values ('$u_id','$u_pass','$u_name','$email','$regist_day','9','0')";
+
+    mysqli_query($conn,$sql);
+    mysqli_close($conn);
+
+?>
+<script>location.href="index.html";</script>
+
+</body>
+</html>

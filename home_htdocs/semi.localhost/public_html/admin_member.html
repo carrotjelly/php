@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<meta charset="utf-8">
+<title>MYUNGLI 실습예제</title>
+<?php include "head.html";?>
+<?php include "head_list.html";?>
+<script src="/trans_js/?mod=list"></script>
+<link rel="stylesheet" type="text/css" href="./css/administrator.css">
+</head>
+<body> 
+<header>
+    <?php include "header.html";?>
+</header>  
+<section class="fontstyle">
+   	<div id="admin_box">
+	    <h3 id="member_title">회원 정보 및 관리</h3>
+		<ul class="top_buttons">
+			<li><span><a href="admin_member.html">회원관리 </a></span></li>
+			<li><span><a href="admin_board.html">게시물관리</a></span></li>
+		</ul>
+	    <table id="member_list">
+			<colgroup>
+				<col width="10%">
+				<col width="18%">
+				<col width="14%">
+				<col width="10%">
+				<col width="14%">
+				<col width="14%">
+				<col width="10%">
+				<col width="10%">
+			</colgroup>
+			<thead>
+			<tr>
+				<th class="col1">번호</th>
+				<th class="col2">아이디</th>
+				<th class="col3">이름</th>
+				<th class="col4">레벨</th>
+				<th class="col5">마일리지</th>
+				<th class="col6">가입일</th>
+				<th class="col7">수정</th>
+				<th class="col8">삭제</th>
+			</tr>
+			</thead>		
+			<tbody>
+			<tr>				
+				<td colspan="8">등록된 회원이 없습니다.</td>
+			</tr>
+			</tbody>
+		</table>
+		<ul id="search_box">
+		<li><select name="search_key" id="search_name">
+				<option value="1">통합검색</option>
+				<option value="2">아이디</option>
+				<option value="3">이름</option>
+				<option value="4">레벨</option>
+				<option value="5">가입일</option>
+			</select>&nbsp;
+			<input type="text" name="search_text" id="search_text">&nbsp;
+			<input type="button" value="검색" id="search"></li>
+		</ul>
+	</div> <!-- admin_box -->
+</section> 
+<footer>
+    <?php include "footer.html";?>
+</footer>
+</body>
+</html>

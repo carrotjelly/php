@@ -1,0 +1,241 @@
+2023-08-11 15:22:07 0 [Note] Starting MariaDB 10.11.2-MariaDB source revision cafba8761af55ae16cc69c9b53a341340a845b36 as process 14736
+2023-08-11 15:22:08 0 [Note] InnoDB: The first data file './ibdata1' did not exist. A new tablespace will be created!
+2023-08-11 15:22:08 0 [Note] InnoDB: Compressed tables use zlib 1.2.12
+2023-08-11 15:22:08 0 [Note] InnoDB: Number of transaction pools: 1
+2023-08-11 15:22:08 0 [Note] InnoDB: Using crc32 + pclmulqdq instructions
+2023-08-11 15:22:08 0 [Note] InnoDB: Initializing buffer pool, total size = 20.000MiB, chunk size = 1.000MiB
+2023-08-11 15:22:08 0 [Note] InnoDB: Completed initialization of buffer pool
+2023-08-11 15:22:08 0 [Note] InnoDB: Setting file './ibdata1' size to 12.000MiB. Physically writing the file full; Please wait ...
+2023-08-11 15:22:08 0 [Note] InnoDB: File './ibdata1' size is now 12.000MiB.
+2023-08-11 15:22:08 0 [Note] InnoDB: File system buffers for log disabled (block size=4096 bytes)
+2023-08-11 15:22:08 0 [Note] InnoDB: Doublewrite buffer not found: creating new
+2023-08-11 15:22:08 0 [Note] InnoDB: 128 rollback segments are active.
+2023-08-11 15:22:08 0 [Note] InnoDB: Setting file './ibtmp1' size to 12.000MiB. Physically writing the file full; Please wait ...
+2023-08-11 15:22:08 0 [Note] InnoDB: File './ibtmp1' size is now 12.000MiB.
+2023-08-11 15:22:08 0 [Note] InnoDB: log sequence number 0; transaction id 3
+2023-08-11 15:22:08 0 [Note] Plugin 'FEEDBACK' is disabled.
+2023-08-11 15:22:08 0 [Note] mysqld.exe: SSPI: using principal name 'localhost', mech 'Negotiate'
+2023-08-11 15:31:17 0 [Note] Starting MariaDB 10.11.2-MariaDB source revision cafba8761af55ae16cc69c9b53a341340a845b36 as process 2360
+2023-08-11 15:31:17 0 [Note] InnoDB: Compressed tables use zlib 1.2.12
+2023-08-11 15:31:17 0 [Note] InnoDB: Number of transaction pools: 1
+2023-08-11 15:31:17 0 [Note] InnoDB: Using crc32 + pclmulqdq instructions
+2023-08-11 15:31:17 0 [Note] InnoDB: Initializing buffer pool, total size = 128.000MiB, chunk size = 2.000MiB
+2023-08-11 15:31:17 0 [Note] InnoDB: Completed initialization of buffer pool
+2023-08-11 15:31:17 0 [Note] InnoDB: File system buffers for log disabled (block size=4096 bytes)
+2023-08-11 15:31:17 0 [Note] InnoDB: 128 rollback segments are active.
+2023-08-11 15:31:17 0 [Note] InnoDB: Setting file './ibtmp1' size to 12.000MiB. Physically writing the file full; Please wait ...
+2023-08-11 15:31:17 0 [Note] InnoDB: File './ibtmp1' size is now 12.000MiB.
+2023-08-11 15:31:17 0 [Note] InnoDB: log sequence number 46590; transaction id 14
+2023-08-11 15:31:17 0 [Note] Plugin 'FEEDBACK' is disabled.
+2023-08-11 15:31:17 0 [Note] InnoDB: Loading buffer pool(s) from D:\smartsi_edu\mariadb-10.11.2-winx64\database_mysql_var\ib_buffer_pool
+2023-08-11 15:31:17 0 [Note] mysqld.exe: SSPI: using principal name 'localhost', mech 'Negotiate'
+2023-08-11 15:31:17 0 [Note] InnoDB: Buffer pool(s) load completed at 230811 15:31:17
+2023-08-11 15:31:17 0 [Note] Server socket created on IP: '::'.
+2023-08-11 15:31:17 0 [Note] Server socket created on IP: '0.0.0.0'.
+2023-08-11 15:31:17 0 [Note] D:\smartsi_edu\mariadb-10.11.2-winx64\mariadb-10.11.2-winx64\bin\mysqld.exe: ready for connections.
+Version: '10.11.2-MariaDB'  socket: ''  port: 3306  mariadb.org binary distribution
+2023-08-11 15:31:48 0 [Note] Windows service "mariaDB":  received SERVICE_CONTROL_STOP
+2023-08-11 15:31:48 0 [Note] D:\smartsi_edu\mariadb-10.11.2-winx64\mariadb-10.11.2-winx64\bin\mysqld.exe (initiated by: unknown): Normal shutdown
+2023-08-11 15:31:48 0 [Note] InnoDB: FTS optimize thread exiting.
+2023-08-11 15:31:48 0 [Note] InnoDB: Starting shutdown...
+2023-08-11 15:31:48 0 [Note] InnoDB: Dumping buffer pool(s) to D:\smartsi_edu\mariadb-10.11.2-winx64\database_mysql_var\ib_buffer_pool
+2023-08-11 15:31:48 0 [Note] InnoDB: Buffer pool(s) dump completed at 230811 15:31:48
+2023-08-11 15:31:49 0 [Note] InnoDB: Removed temporary tablespace data file: "./ibtmp1"
+2023-08-11 15:31:49 0 [Note] InnoDB: Shutdown completed; log sequence number 46590; transaction id 15
+2023-08-11 15:31:49 0 [Note] D:\smartsi_edu\mariadb-10.11.2-winx64\mariadb-10.11.2-winx64\bin\mysqld.exe: Shutdown complete
+
+2023-08-11 15:37:24 0 [Note] Starting MariaDB 10.11.2-MariaDB source revision cafba8761af55ae16cc69c9b53a341340a845b36 as process 7928
+2023-08-11 15:37:24 0 [Note] InnoDB: Compressed tables use zlib 1.2.12
+2023-08-11 15:37:24 0 [Note] InnoDB: Number of transaction pools: 1
+2023-08-11 15:37:24 0 [Note] InnoDB: Using crc32 + pclmulqdq instructions
+2023-08-11 15:37:24 0 [Note] InnoDB: Initializing buffer pool, total size = 128.000MiB, chunk size = 2.000MiB
+2023-08-11 15:37:24 0 [Note] InnoDB: Completed initialization of buffer pool
+2023-08-11 15:37:24 0 [Note] InnoDB: File system buffers for log disabled (block size=4096 bytes)
+2023-08-11 15:37:24 0 [Note] InnoDB: 128 rollback segments are active.
+2023-08-11 15:37:24 0 [Note] InnoDB: Setting file './ibtmp1' size to 12.000MiB. Physically writing the file full; Please wait ...
+2023-08-11 15:37:24 0 [Note] InnoDB: File './ibtmp1' size is now 12.000MiB.
+2023-08-11 15:37:24 0 [Note] InnoDB: log sequence number 46590; transaction id 14
+2023-08-11 15:37:24 0 [Note] Plugin 'FEEDBACK' is disabled.
+2023-08-11 15:37:24 0 [Note] InnoDB: Loading buffer pool(s) from D:\smartsi_edu\mariadb-10.11.2-winx64\database_mysql_var\ib_buffer_pool
+2023-08-11 15:37:24 0 [Note] InnoDB: Buffer pool(s) load completed at 230811 15:37:24
+2023-08-11 15:37:36 0 [Note] mysqld.exe: SSPI: using principal name 'localhost', mech 'Negotiate'
+2023-08-11 15:37:36 0 [Note] Server socket created on IP: '::'.
+2023-08-11 15:37:36 0 [Note] Server socket created on IP: '0.0.0.0'.
+2023-08-11 15:37:36 0 [Note] D:\smartsi_edu\mariadb-10.11.2-winx64\mariadb-10.11.2-winx64\bin\mysqld.exe: ready for connections.
+Version: '10.11.2-MariaDB'  socket: ''  port: 3306  mariadb.org binary distribution
+2023-08-11 17:24:09 7 [Warning] Access denied for user 'booklocalhost'@'localhost' to database 'booklocalhost.member'
+2023-08-11 17:48:34 10 [Warning] Aborted connection 10 to db: 'booklocalhost' user: 'booklocalhost' host: 'localhost' (Got an error reading communication packets)
+2023-08-14 10:17:00 0 [Note] Windows service "mariaDB":  received SERVICE_CONTROL_SHUTDOWN
+2023-08-14 10:17:00 0 [Note] D:\smartsi_edu\mariadb-10.11.2-winx64\mariadb-10.11.2-winx64\bin\mysqld.exe (initiated by: unknown): Normal shutdown
+2023-08-14 10:17:00 0 [Note] InnoDB: FTS optimize thread exiting.
+2023-08-14 10:17:00 0 [Note] InnoDB: Starting shutdown...
+2023-08-14 10:17:00 0 [Note] InnoDB: Dumping buffer pool(s) to D:\smartsi_edu\mariadb-10.11.2-winx64\database_mysql_var\ib_buffer_pool
+2023-08-14 10:17:00 0 [Note] InnoDB: Buffer pool(s) dump completed at 230814 10:17:00
+2023-08-14 10:17:01 0 [Note] InnoDB: Removed temporary tablespace data file: "./ibtmp1"
+2023-08-14 10:17:01 0 [Note] InnoDB: Shutdown completed; log sequence number 93679; transaction id 148
+2023-08-14 10:17:01 0 [Note] D:\smartsi_edu\mariadb-10.11.2-winx64\mariadb-10.11.2-winx64\bin\mysqld.exe: Shutdown complete
+
+2023-08-14 10:17:19 0 [Note] Starting MariaDB 10.11.2-MariaDB source revision cafba8761af55ae16cc69c9b53a341340a845b36 as process 2784
+2023-08-14 10:17:19 0 [Note] InnoDB: Compressed tables use zlib 1.2.12
+2023-08-14 10:17:19 0 [Note] InnoDB: Number of transaction pools: 1
+2023-08-14 10:17:19 0 [Note] InnoDB: Using crc32 + pclmulqdq instructions
+2023-08-14 10:17:19 0 [Note] InnoDB: Initializing buffer pool, total size = 128.000MiB, chunk size = 2.000MiB
+2023-08-14 10:17:19 0 [Note] InnoDB: Completed initialization of buffer pool
+2023-08-14 10:17:19 0 [Note] InnoDB: File system buffers for log disabled (block size=4096 bytes)
+2023-08-14 10:17:19 0 [Note] InnoDB: 128 rollback segments are active.
+2023-08-14 10:17:19 0 [Note] InnoDB: Setting file './ibtmp1' size to 12.000MiB. Physically writing the file full; Please wait ...
+2023-08-14 10:17:19 0 [Note] InnoDB: File './ibtmp1' size is now 12.000MiB.
+2023-08-14 10:17:19 0 [Note] InnoDB: log sequence number 93679; transaction id 149
+2023-08-14 10:17:19 0 [Note] InnoDB: Loading buffer pool(s) from D:\smartsi_edu\mariadb-10.11.2-winx64\database_mysql_var\ib_buffer_pool
+2023-08-14 10:17:19 0 [Note] Plugin 'FEEDBACK' is disabled.
+2023-08-14 10:17:19 0 [Note] InnoDB: Buffer pool(s) load completed at 230814 10:17:19
+2023-08-14 10:17:27 0 [Note] mysqld.exe: SSPI: using principal name 'localhost', mech 'Negotiate'
+2023-08-14 10:17:27 0 [Note] Server socket created on IP: '::'.
+2023-08-14 10:17:27 0 [Note] Server socket created on IP: '0.0.0.0'.
+2023-08-14 10:17:28 0 [Note] D:\smartsi_edu\mariadb-10.11.2-winx64\mariadb-10.11.2-winx64\bin\mysqld.exe: ready for connections.
+Version: '10.11.2-MariaDB'  socket: ''  port: 3306  mariadb.org binary distribution
+2023-08-14 12:47:46 0 [Note] Windows service "mariaDB":  received SERVICE_CONTROL_SHUTDOWN
+2023-08-14 12:47:46 0 [Note] D:\smartsi_edu\mariadb-10.11.2-winx64\mariadb-10.11.2-winx64\bin\mysqld.exe (initiated by: unknown): Normal shutdown
+2023-08-14 12:47:46 0 [Note] InnoDB: FTS optimize thread exiting.
+2023-08-14 12:47:46 0 [Note] InnoDB: Starting shutdown...
+2023-08-14 12:47:46 0 [Note] InnoDB: Dumping buffer pool(s) to D:\smartsi_edu\mariadb-10.11.2-winx64\database_mysql_var\ib_buffer_pool
+2023-08-14 12:47:46 0 [Note] InnoDB: Buffer pool(s) dump completed at 230814 12:47:46
+2023-08-14 12:47:47 0 [Note] InnoDB: Removed temporary tablespace data file: "./ibtmp1"
+2023-08-14 12:47:47 0 [Note] InnoDB: Shutdown completed; log sequence number 93679; transaction id 150
+2023-08-14 12:47:47 0 [Note] D:\smartsi_edu\mariadb-10.11.2-winx64\mariadb-10.11.2-winx64\bin\mysqld.exe: Shutdown complete
+
+2023-08-14 12:49:58 0 [Note] Starting MariaDB 10.11.2-MariaDB source revision cafba8761af55ae16cc69c9b53a341340a845b36 as process 4312
+2023-08-14 12:49:58 0 [Note] InnoDB: Compressed tables use zlib 1.2.12
+2023-08-14 12:49:58 0 [Note] InnoDB: Number of transaction pools: 1
+2023-08-14 12:49:58 0 [Note] InnoDB: Using crc32 + pclmulqdq instructions
+2023-08-14 12:49:58 0 [Note] InnoDB: Initializing buffer pool, total size = 128.000MiB, chunk size = 2.000MiB
+2023-08-14 12:49:58 0 [Note] InnoDB: Completed initialization of buffer pool
+2023-08-14 12:49:58 0 [Note] InnoDB: File system buffers for log disabled (block size=4096 bytes)
+2023-08-14 12:49:58 0 [Note] InnoDB: 128 rollback segments are active.
+2023-08-14 12:49:58 0 [Note] InnoDB: Setting file './ibtmp1' size to 12.000MiB. Physically writing the file full; Please wait ...
+2023-08-14 12:49:58 0 [Note] InnoDB: File './ibtmp1' size is now 12.000MiB.
+2023-08-14 12:49:58 0 [Note] InnoDB: log sequence number 93679; transaction id 149
+2023-08-14 12:49:58 0 [Note] InnoDB: Loading buffer pool(s) from D:\smartsi_edu\mariadb-10.11.2-winx64\database_mysql_var\ib_buffer_pool
+2023-08-14 12:49:58 0 [Note] Plugin 'FEEDBACK' is disabled.
+2023-08-14 12:49:58 0 [Note] InnoDB: Buffer pool(s) load completed at 230814 12:49:58
+2023-08-14 12:50:09 0 [Note] mysqld.exe: SSPI: using principal name 'localhost', mech 'Negotiate'
+2023-08-14 12:50:09 0 [Note] Server socket created on IP: '::'.
+2023-08-14 12:50:09 0 [Note] Server socket created on IP: '0.0.0.0'.
+2023-08-14 12:50:09 0 [Note] D:\smartsi_edu\mariadb-10.11.2-winx64\mariadb-10.11.2-winx64\bin\mysqld.exe: ready for connections.
+Version: '10.11.2-MariaDB'  socket: ''  port: 3306  mariadb.org binary distribution
+2023-08-14 14:14:56 0 [Note] Windows service "mariaDB":  received SERVICE_CONTROL_STOP
+2023-08-14 14:14:56 0 [Note] D:\smartsi_edu\mariadb-10.11.2-winx64\mariadb-10.11.2-winx64\bin\mysqld.exe (initiated by: unknown): Normal shutdown
+2023-08-14 14:14:56 0 [Note] InnoDB: FTS optimize thread exiting.
+2023-08-14 14:14:56 0 [Note] InnoDB: Starting shutdown...
+2023-08-14 14:14:56 0 [Note] InnoDB: Dumping buffer pool(s) to D:\smartsi_edu\mariadb-10.11.2-winx64\database_mysql_var\ib_buffer_pool
+2023-08-14 14:14:56 0 [Note] InnoDB: Buffer pool(s) dump completed at 230814 14:14:56
+2023-08-14 14:14:56 0 [Note] InnoDB: Removed temporary tablespace data file: "./ibtmp1"
+2023-08-14 14:14:56 0 [Note] InnoDB: Shutdown completed; log sequence number 93679; transaction id 150
+2023-08-14 14:14:56 0 [Note] D:\smartsi_edu\mariadb-10.11.2-winx64\mariadb-10.11.2-winx64\bin\mysqld.exe: Shutdown complete
+
+2023-08-14 14:15:09 0 [Note] Starting MariaDB 10.11.2-MariaDB source revision cafba8761af55ae16cc69c9b53a341340a845b36 as process 1748
+2023-08-14 14:15:09 0 [Note] InnoDB: Compressed tables use zlib 1.2.12
+2023-08-14 14:15:09 0 [Note] InnoDB: Number of transaction pools: 1
+2023-08-14 14:15:09 0 [Note] InnoDB: Using crc32 + pclmulqdq instructions
+2023-08-14 14:15:09 0 [Note] InnoDB: Initializing buffer pool, total size = 128.000MiB, chunk size = 2.000MiB
+2023-08-14 14:15:09 0 [Note] InnoDB: Completed initialization of buffer pool
+2023-08-14 14:15:09 0 [Note] InnoDB: File system buffers for log disabled (block size=4096 bytes)
+2023-08-14 14:15:09 0 [Note] InnoDB: 128 rollback segments are active.
+2023-08-14 14:15:09 0 [Note] InnoDB: Setting file './ibtmp1' size to 12.000MiB. Physically writing the file full; Please wait ...
+2023-08-14 14:15:09 0 [Note] InnoDB: File './ibtmp1' size is now 12.000MiB.
+2023-08-14 14:15:09 0 [Note] InnoDB: log sequence number 93679; transaction id 149
+2023-08-14 14:15:09 0 [Note] Plugin 'FEEDBACK' is disabled.
+2023-08-14 14:15:09 0 [Note] InnoDB: Loading buffer pool(s) from D:\smartsi_edu\mariadb-10.11.2-winx64\database_mysql_var\ib_buffer_pool
+2023-08-14 14:15:09 0 [Note] InnoDB: Buffer pool(s) load completed at 230814 14:15:09
+2023-08-14 14:15:16 0 [Note] mysqld.exe: SSPI: using principal name 'localhost', mech 'Negotiate'
+2023-08-14 14:15:16 0 [Note] Server socket created on IP: '::'.
+2023-08-14 14:15:16 0 [Note] Server socket created on IP: '0.0.0.0'.
+2023-08-14 14:15:16 0 [Note] D:\smartsi_edu\mariadb-10.11.2-winx64\mariadb-10.11.2-winx64\bin\mysqld.exe: ready for connections.
+Version: '10.11.2-MariaDB'  socket: ''  port: 3306  mariadb.org binary distribution
+2023-08-14 14:20:17 0 [Note] Windows service "mariaDB":  received SERVICE_CONTROL_STOP
+2023-08-14 14:20:17 0 [Note] D:\smartsi_edu\mariadb-10.11.2-winx64\mariadb-10.11.2-winx64\bin\mysqld.exe (initiated by: unknown): Normal shutdown
+2023-08-14 14:20:17 0 [Note] InnoDB: FTS optimize thread exiting.
+2023-08-14 14:20:17 0 [Note] InnoDB: Starting shutdown...
+2023-08-14 14:20:17 0 [Note] InnoDB: Dumping buffer pool(s) to D:\smartsi_edu\mariadb-10.11.2-winx64\database_mysql_var\ib_buffer_pool
+2023-08-14 14:20:17 0 [Note] InnoDB: Buffer pool(s) dump completed at 230814 14:20:17
+2023-08-14 14:20:18 0 [Note] InnoDB: Removed temporary tablespace data file: "./ibtmp1"
+2023-08-14 14:20:18 0 [Note] InnoDB: Shutdown completed; log sequence number 93679; transaction id 151
+2023-08-14 14:20:18 0 [Note] D:\smartsi_edu\mariadb-10.11.2-winx64\mariadb-10.11.2-winx64\bin\mysqld.exe: Shutdown complete
+
+2023-08-14 14:22:46 0 [Note] Starting MariaDB 10.11.2-MariaDB source revision cafba8761af55ae16cc69c9b53a341340a845b36 as process 7776
+2023-08-14 14:22:46 0 [Note] InnoDB: Compressed tables use zlib 1.2.12
+2023-08-14 14:22:46 0 [Note] InnoDB: Number of transaction pools: 1
+2023-08-14 14:22:46 0 [Note] InnoDB: Using crc32 + pclmulqdq instructions
+2023-08-14 14:22:46 0 [Note] InnoDB: Initializing buffer pool, total size = 128.000MiB, chunk size = 2.000MiB
+2023-08-14 14:22:46 0 [Note] InnoDB: Completed initialization of buffer pool
+2023-08-14 14:22:46 0 [Note] InnoDB: File system buffers for log disabled (block size=4096 bytes)
+2023-08-14 14:22:46 0 [Note] InnoDB: 128 rollback segments are active.
+2023-08-14 14:22:46 0 [Note] InnoDB: Setting file './ibtmp1' size to 12.000MiB. Physically writing the file full; Please wait ...
+2023-08-14 14:22:46 0 [Note] InnoDB: File './ibtmp1' size is now 12.000MiB.
+2023-08-14 14:22:46 0 [Note] InnoDB: log sequence number 93679; transaction id 149
+2023-08-14 14:22:46 0 [Note] Plugin 'FEEDBACK' is disabled.
+2023-08-14 14:22:46 0 [Note] InnoDB: Loading buffer pool(s) from D:\smartsi_edu\mariadb-10.11.2-winx64\database_mysql_var\ib_buffer_pool
+2023-08-14 14:22:46 0 [Note] InnoDB: Buffer pool(s) load completed at 230814 14:22:46
+2023-08-14 14:22:52 0 [Note] mysqld.exe: SSPI: using principal name 'localhost', mech 'Negotiate'
+2023-08-14 14:22:52 0 [Note] Server socket created on IP: '::'.
+2023-08-14 14:22:52 0 [Note] Server socket created on IP: '0.0.0.0'.
+2023-08-14 14:22:52 0 [Note] D:\smartsi_edu\mariadb-10.11.2-winx64\mariadb-10.11.2-winx64\bin\mysqld.exe: ready for connections.
+Version: '10.11.2-MariaDB'  socket: ''  port: 3306  mariadb.org binary distribution
+2023-08-14 21:47:13 0 [Note] Windows service "mariaDB":  received SERVICE_CONTROL_SHUTDOWN
+2023-08-14 21:47:13 0 [Note] D:\smartsi_edu\mariadb-10.11.2-winx64\mariadb-10.11.2-winx64\bin\mysqld.exe (initiated by: unknown): Normal shutdown
+2023-08-14 21:47:13 0 [Note] InnoDB: FTS optimize thread exiting.
+2023-08-14 21:47:13 0 [Note] InnoDB: Starting shutdown...
+2023-08-14 21:47:13 0 [Note] InnoDB: Dumping buffer pool(s) to D:\smartsi_edu\mariadb-10.11.2-winx64\database_mysql_var\ib_buffer_pool
+2023-08-14 21:47:13 0 [Note] InnoDB: Buffer pool(s) dump completed at 230814 21:47:13
+2023-08-14 21:47:13 0 [Note] InnoDB: Removed temporary tablespace data file: "./ibtmp1"
+2023-08-14 21:47:13 0 [Note] InnoDB: Shutdown completed; log sequence number 147075; transaction id 274
+2023-08-14 21:47:13 0 [Note] D:\smartsi_edu\mariadb-10.11.2-winx64\mariadb-10.11.2-winx64\bin\mysqld.exe: Shutdown complete
+
+2023-08-16  8:40:28 0 [Note] Starting MariaDB 10.11.2-MariaDB source revision cafba8761af55ae16cc69c9b53a341340a845b36 as process 4120
+2023-08-16  8:40:28 0 [Note] InnoDB: Compressed tables use zlib 1.2.12
+2023-08-16  8:40:28 0 [Note] InnoDB: Number of transaction pools: 1
+2023-08-16  8:40:28 0 [Note] InnoDB: Using crc32 + pclmulqdq instructions
+2023-08-16  8:40:28 0 [Note] InnoDB: Initializing buffer pool, total size = 128.000MiB, chunk size = 2.000MiB
+2023-08-16  8:40:28 0 [Note] InnoDB: Completed initialization of buffer pool
+2023-08-16  8:40:28 0 [Note] InnoDB: File system buffers for log disabled (block size=4096 bytes)
+2023-08-16  8:40:28 0 [Note] InnoDB: 128 rollback segments are active.
+2023-08-16  8:40:28 0 [Note] InnoDB: Setting file './ibtmp1' size to 12.000MiB. Physically writing the file full; Please wait ...
+2023-08-16  8:40:28 0 [Note] InnoDB: File './ibtmp1' size is now 12.000MiB.
+2023-08-16  8:40:28 0 [Note] InnoDB: log sequence number 147075; transaction id 275
+2023-08-16  8:40:28 0 [Note] InnoDB: Loading buffer pool(s) from D:\smartsi_edu\mariadb-10.11.2-winx64\database_mysql_var\ib_buffer_pool
+2023-08-16  8:40:28 0 [Note] Plugin 'FEEDBACK' is disabled.
+2023-08-16  8:40:28 0 [Note] InnoDB: Buffer pool(s) load completed at 230816  8:40:28
+2023-08-16  8:40:37 0 [Note] mysqld.exe: SSPI: using principal name 'localhost', mech 'Negotiate'
+2023-08-16  8:40:37 0 [Note] Server socket created on IP: '::'.
+2023-08-16  8:40:37 0 [Note] Server socket created on IP: '0.0.0.0'.
+2023-08-16  8:40:37 0 [Note] D:\smartsi_edu\mariadb-10.11.2-winx64\mariadb-10.11.2-winx64\bin\mysqld.exe: ready for connections.
+Version: '10.11.2-MariaDB'  socket: ''  port: 3306  mariadb.org binary distribution
+2023-08-16 12:46:40 0 [Note] Windows service "mariaDB":  received SERVICE_CONTROL_SHUTDOWN
+2023-08-16 12:46:40 0 [Note] D:\smartsi_edu\mariadb-10.11.2-winx64\mariadb-10.11.2-winx64\bin\mysqld.exe (initiated by: unknown): Normal shutdown
+2023-08-16 12:46:40 0 [Note] InnoDB: FTS optimize thread exiting.
+2023-08-16 12:46:40 0 [Note] InnoDB: Starting shutdown...
+2023-08-16 12:46:40 0 [Note] InnoDB: Dumping buffer pool(s) to D:\smartsi_edu\mariadb-10.11.2-winx64\database_mysql_var\ib_buffer_pool
+2023-08-16 12:46:40 0 [Note] InnoDB: Buffer pool(s) dump completed at 230816 12:46:40
+2023-08-16 12:46:40 0 [Note] InnoDB: Removed temporary tablespace data file: "./ibtmp1"
+2023-08-16 12:46:40 0 [Note] InnoDB: Shutdown completed; log sequence number 147075; transaction id 276
+2023-08-16 12:46:40 0 [Note] D:\smartsi_edu\mariadb-10.11.2-winx64\mariadb-10.11.2-winx64\bin\mysqld.exe: Shutdown complete
+
+2023-08-16 14:02:25 0 [Note] Starting MariaDB 10.11.2-MariaDB source revision cafba8761af55ae16cc69c9b53a341340a845b36 as process 4212
+2023-08-16 14:02:25 0 [Note] InnoDB: Compressed tables use zlib 1.2.12
+2023-08-16 14:02:25 0 [Note] InnoDB: Number of transaction pools: 1
+2023-08-16 14:02:25 0 [Note] InnoDB: Using crc32 + pclmulqdq instructions
+2023-08-16 14:02:25 0 [Note] InnoDB: Initializing buffer pool, total size = 128.000MiB, chunk size = 2.000MiB
+2023-08-16 14:02:25 0 [Note] InnoDB: Completed initialization of buffer pool
+2023-08-16 14:02:25 0 [Note] InnoDB: File system buffers for log disabled (block size=4096 bytes)
+2023-08-16 14:02:25 0 [Note] InnoDB: 128 rollback segments are active.
+2023-08-16 14:02:25 0 [Note] InnoDB: Setting file './ibtmp1' size to 12.000MiB. Physically writing the file full; Please wait ...
+2023-08-16 14:02:25 0 [Note] InnoDB: File './ibtmp1' size is now 12.000MiB.
+2023-08-16 14:02:25 0 [Note] InnoDB: log sequence number 147075; transaction id 275
+2023-08-16 14:02:25 0 [Note] InnoDB: Loading buffer pool(s) from D:\smartsi_edu\mariadb-10.11.2-winx64\database_mysql_var\ib_buffer_pool
+2023-08-16 14:02:25 0 [Note] Plugin 'FEEDBACK' is disabled.
+2023-08-16 14:02:25 0 [Note] InnoDB: Buffer pool(s) load completed at 230816 14:02:25
+2023-08-16 14:02:33 0 [Note] mysqld.exe: SSPI: using principal name 'localhost', mech 'Negotiate'
+2023-08-16 14:02:33 0 [Note] Server socket created on IP: '::'.
+2023-08-16 14:02:33 0 [Note] Server socket created on IP: '0.0.0.0'.
+2023-08-16 14:02:33 0 [Note] D:\smartsi_edu\mariadb-10.11.2-winx64\mariadb-10.11.2-winx64\bin\mysqld.exe: ready for connections.
+Version: '10.11.2-MariaDB'  socket: ''  port: 3306  mariadb.org binary distribution

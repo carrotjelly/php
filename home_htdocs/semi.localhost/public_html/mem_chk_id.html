@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+<?php include "head.html";?>
+
+<link rel="stylesheet" type="text/css" href="./css/font.css">
+<style>
+h3 {
+	border-bottom: solid 5px black;
+	padding-bottom: 5px;
+}
+
+#close {
+	margin: 20px 0 0 80px;
+	cursor: pointer;
+}
+
+ul {list-style-type: none;margin: 10px 10px 20px 10px;}
+</style>
+</head>
+<body class="fontstyle">
+	<h3>아이디 중복체크</h3>
+	<p><ul>
+<?php
+$id = $_GET['id'];
+if(!$id){
+	echo "<li>아이디를 입력해 주세요!</li>";
+}else{
+	include "../inc_con/db_connect.html";
+	$sql = "select * from members where id='$id'";
+	$result = mysqli_query($conn,$sql);
+	$num = mysqli_num_rows($result);
+	if($num){
+		echo "<li>$id 아이디는 중복됩니다.</li><li>다른 아이디를 사용해 주세요.</li>";
+	}else{
+		echo "<li><a href='javascript:self.close();'>$id 아이디는 사용 가능합니다.</a></li>";
+	}
+	mysqli_close($conn);
+}
+?>
+	</ul></p>
+	<div style="margin-left: 90px; cursor: pointer; border: 5px solid gray; margin-right: 90px; width: 55px; height: 20px" onclick="self.close();">CLOSE</div>
+	</div>
+</body>
+</html>

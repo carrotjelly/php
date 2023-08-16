@@ -1,0 +1,7 @@
+<?php
+if(!($conn = mysqli_connect("localhost","semilocalhost","qwer1234","semilocalhost","3306"))){
+    exit("MYSQL DB SERVER connect ERROR");
+}
+
+mysqli_select_db($conn,"semilocalhost");
+?>
