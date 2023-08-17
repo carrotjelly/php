@@ -41,7 +41,7 @@ function check_input(){
 
 function reset_form(){
     let myform = document.myform;
-    myform.resert();
+    myform.reset();
 }
 
 function check_id(){

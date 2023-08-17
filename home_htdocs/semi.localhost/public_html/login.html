@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <?php
+    $u_id = $_POST['u_id'];
+    $u_pass = $_POST['u_pass'];
+
+    include "../inc_con/db_connect.html";
+    $sql = "select * from members where id='$u_id'";
+
+    $result = mysqli_query($conn,$sql);
+    $num = mysqli_num_rows($result);
+    if(!$num){
+        echo "<script>alert('등록되지 않은 아이디입니다.'); history.back(); </script>";
+    }else{
+        $row = mysqli_fetch_array($result);
+        mysqli_close($conn);
+        if($u_pass != $row['pass']){
+            echo "<script>alert('비밀번호가 틀립니다.'); history.back(); </script>";
+        }else{
+            session_start();
+            $_SESSION['userid'] = $row['id'];
+            $_SESSION['username'] = $row['name'];
+            $_SESSION['userpoint'] = $row['point'];
+            $_SESSION['userlevel'] = $row['level'];
+        }
+    }
+
+    ?>
+    <script>location.href="index.html";</script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<?php
+session_start();
+if (isset($_SESSION['userid']))
+    $userid = $_SESSION['userid'];
+else
+    $userid = "";
+if (isset($_SESSION['username']))
+    $username = $_SESSION['username'];
+else
+    $username = "";
+if (isset($_SESSION['userpoint']))
+    $userpoint = $_SESSION['userpoint'];
+else
+    $userpoint = "";
+if (isset($_SESSION['userlevel']))
+    $userlevel = $_SESSION['userlevel'];
+else
+    $userlevel = "";
+?>
+<div id="top">
+    <h3>
+        <a class="fontstyle" href="index.html">PY.localhost : ABOUT ANIMAL</a>
+        <img src="./img/doglogo.png" width="25px" height="20px">
+    </h3>
+    <ul id="top_menu">
+        <li><a class="fontstyle" href="introduce.html">ABOUT US</a></li>
+        <li> | </li>
+        <?php
+        if (!$userid) {
+            ?>
+            <li><a class="fontstyle" href="mem_form.html">REGISTER</a> </li>
+            <li> | </li>
+            <li><a class="fontstyle" href="lgi_form.html">LOG IN</a></li>
+            <?php
+        } else {
+            $logged = $username . "(" . $userid . ")님 [ level : " . $userlevel . " ] [ point : " . $userpoint . " ]";
+            ?>
+            <li class="fontstyle">
+                <?= $logged ?>
+            </li>
+            <li> | </li>
+            <li><a class="fontstyle" href="mem_modify_form.html">MODIFY</a></li>
+            <li> | </li>
+            <li><a class="fontstyle" href="logout.html">LOGOUT</a></li>
+            <?php
+        }
+        if ($userlevel == 1) {
+            ?>
+            <li> | </li>
+            <li><a href="admin_member.html" class="fontstyle">ADMIN</a></li>
+        <?php
+        }
+        ?>
+    </ul>
+</div>
+
+
+
+<div id="menu_bar" style="align-contents: center">
+    <ul class="fontstyle">
+        <li><a href="index.html" class="back">HOME</a></li>
+        <li><a href="msg_form.html" class="back">MESSAGE</a></li>
+        <li><a href="bd_list.html" class="back">BOARD</a></li>
+        <li><a href="index.html" class="back">EVENT</a>
+    </ul>
+</div>
