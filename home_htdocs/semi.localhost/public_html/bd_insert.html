@@ -11,24 +11,63 @@
 <body>
     <?php
     session_start();
-    $id = $_SESSION['userid'];
-    $name = $_SESSION['username'];
-    $subject = $_POST['subject'];
-    $content = $_POST['content'];
+    if (isset($_SESSION['userid']))
+        $id = $_SESSION['userid'];
+    else
+        $id = "";
+    if (isset($_SESSION['username']))
+        $name = $_SESSION['username'];
+    else
+        $name = "";
+
+    if (!$id)
+        echo "<script>alert('로그인 후에 작성 가능합니다.'); history.back();</script>";
+
+    $subject = htmlspecialchars($_POST['subject'], ENT_QUOTES);
+    $content = htmlspecialchars($_POST['content'], ENT_QUOTES);
 
     $regist_day = date("Y-m-d (H:i)");
 
+    $upfile_name = $_FILES['upfile']['name'];
+    $upfile_tmp_name = $_FILES['upfile']['tmp_name'];
+    $upfile_type = $_FILES['upfile']['type'];
+    $upfile_size = $_FILES['upfile']['size'];
+    $upfile_error = $_FILES['upfile']['error'];
+
+    if ($upfile_name and !$upfile_error) {
+        $file = explode(".", $upfile_name);
+        $file_name = $file[0];
+        $file_ext = end($file);
+
+        $upload_dir = "./data/";
+        $new_file_name = date("Y_m_d_H_i_s");
+        $copied_file_name = $new_file_name . "." . $file_ext;
+        $uploaded_file = $upload_dir . $copied_file_name;
+
+        if ($upfile_size > 2000000) {
+            echo "<script>alert('업로드 파일 크기가 지정된 용랑(2mb)을 초과했습니다.\n파일 크기를 체크해주세요.');history.back();</script>";
+            exit;
+        }
+        if (!move_uploaded_file($upfile_tmp_name, $uploaded_file)) {
+            echo "<script>alert('파일을 지정한 디렉토리에 복사하는데 실패했습니다.');history.back();</script>";
+        }
+
+    }
+
     include "../inc_con/db_connect.html";
 
-    $sql = "insert into board(id, name, subject, content, regist_day, hit) values('$id','$name','$subject','$content','$regist_day','0')";
+    $sql = "insert into board(id, name, subject, content, regist_day, hit, file_name, file_type, file_copied) values('$id','$name','$subject','$content','$regist_day','1','$upfile_name','$upfile_type','$copied_file_name')";
 
+    $point_up = 100;
+    $sql2 = "update members set point = point + $point_up where id = '$id'";
     mysqli_query($conn, $sql);
+    mysqli_query($conn, $sql2);
     mysqli_close($conn);
 
     ?>
     <script>
-    alert('작성되었습니다.');
-    location.href = "bd_list.html";
+        alert('작성되었습니다.');
+        location.href = "bd_list.html";
     </script>
 
 </body>
