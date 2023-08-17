@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <?php
+    session_start();
+    if (isset($_SESSION['userid']))
+        $id = $_SESSION['userid'];
+    else
+        $id = "";
+    if (!$id)
+        echo "<script>alert('로그인 후에 작성 가능합니다.'); history.back();</script>";
+
+    $rv_id = $_POST['rv_id'];
+    $subject = htmlspecialchars($_POST['subject'], ENT_QUOTES);
+    $content = htmlspecialchars($_POST['content'], ENT_QUOTES);
+
+    $regist_day = date("Y-m-d (H:i)");
+
+    include "../inc_con/db_connect.html";
+
+    $sql = "insert into message(send_id, rv_id, subject, content, regist_day) values('$id','$rv_id','$subject','$content','$regist_day')";
+
+    mysqli_query($conn, $sql);
+    mysqli_close($conn);
+
+    ?>
+    <script>
+        alert('전송되었습니다.');
+        location.href = "index.html";
+    </script>
+
+</body>
+
+</html>

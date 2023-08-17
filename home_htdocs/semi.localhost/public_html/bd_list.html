@@ -1,70 +1,150 @@
 <!DOCTYPE html>
 <html>
-<head> 
-<meta charset="utf-8">
-<title>MYUNGLI 실습예제</title>
-<?php include "head.html";?>
-<link rel="stylesheet" type="text/css" href="./css/bd.css">
+
+<head>
+	<meta charset="utf-8">
+	<title>MYUNGLI 실습예제</title>
+	<?php include "head.html"; ?>
+	<link rel="stylesheet" type="text/css" href="./css/bd.css">
 </head>
-<body> 
-<header>
-    <?php include "../inc_con/header.html";?>
-</header>
-<section class="fontstyle">
-   	<div id="bd_box">
-	    <h3>자유 게시판</h3>
-    	<table id="mytable">
-			<colgroup>
-				<col width="10%">
-				<col width="40%">
-				<col width="15%">
-				<col width="10%">
-				<col width="15%">
-				<col width="10%">
-			</colgroup>
-    		<thead>
-    		<tr>
-        		<th class="col1">번호</th>
-        		<th class="col2">제목</th>
-        		<th class="col3">글쓴이</th>
-        		<th class="col4">첨부</th>
-        		<th class="col5">등록</th>
-        		<th class="col6">조회</th>
-    		</tr>
-    		</thead>
-			<tbody>
-			<tr>
-				<td class="td_1">1</td>
-				<td class="td_2">게시판 입니다.</td>
-				<td class="td_3">홍길동</td>
-				<td class="td_4"><img class="down_img" alt="다운로드아이콘" src="/img/file.gif"></td>
-				<td class="td_5">2023-08-01 </td>
-				<td class="td_6">1</td>
-			</tr>
-			<tr>				
-				<td colspan="6">현재 등록된 글이 없습니다.</td>
-			</tr>
-			</tbody>
-	    </table>
-		<ul id="search_box">
-			<li><select name="search_key" id="search_name">
-				<option value="1">통합검색</option>
-				<option value="2">제목</option>
-				<option value="3">글쓴이</option>
-				<option value="4">파일명</option>
-				<option value="5">내용</option>
-			</select>&nbsp;
-			<input type="text" name="search_text" id="search_text">&nbsp;
-			<input type="button" value="검색" id="search"></li>
-		</ul>
-		<ul class="buttons">
-			<li><button onclick="location.href='bd_list.html'" class="fontstyle">목록</button></li>
-			<li><button onclick="location.href='bd_form.html'" class="fontstyle" >글쓰기</button></li>
-		</ul>
-	</div> <!-- bd_box -->
-</section> 
-<footer>
-    <?php include "footer.html";?>
-</footer>
+
+<body>
+	<header>
+		<?php include "../inc_con/header.html"; ?>
+	</header>
+	<section class="fontstyle">
+		<div id="bd_box">
+			<h3>자유 게시판</h3>
+			<table id="mytable">
+				<colgroup>
+					<col width="10%">
+					<col width="40%">
+					<col width="15%">
+					<col width="10%">
+					<col width="15%">
+					<col width="10%">
+				</colgroup>
+				<thead>
+					<tr>
+						<th class="col1">번호</th>
+						<th class="col2">제목</th>
+						<th class="col3">글쓴이</th>
+						<th class="col4">첨부</th>
+						<th class="col5">등록</th>
+						<th class="col6">조회</th>
+					</tr>
+				</thead>
+				<tbody>
+					<?php
+					include "../inc_con/db_connect.html";
+					$sql = "select * from board order by num desc";
+					$result = mysqli_query($conn, $sql);
+					$total_record = mysqli_num_rows($result);
+					if (isset($_GET['page'])) {
+						$page = $_GET['page'];
+					} else {
+						$page = 1;
+					}
+					if ($total_record) {
+						$scale = 10;
+						$start = ($page - 1) * $scale;
+						$number = $total_record - $start;
+						for ($i = $start; $i < $start + $scale and $i < $total_record; $i++) {
+							mysqli_data_seek($result, $i);
+							$row = mysqli_fetch_array($result);
+							if ($row['file_name']) {
+								$file_image = "<img src = './img/file.gif'>";
+							} else {
+								$file_image = "";
+							}
+
+							?>
+							<tr>
+								<td class="td_1">
+									<?= $number ?>
+								</td>
+								<td class="td_2"><a href="bd_view.html?num=<?= $row['num'] ?>&page=<?= $page ?>"><?= $row['subject'] ?></a></td>
+								<td class="td_3">
+									<?= $row['name'] ?>(<?= $row['id'] ?>)
+								</td>
+								<td class="td_4">
+									<?= $file_image ?>
+								</td>
+								<td class="td_5">
+									<?= $row['regist_day'] ?>
+								</td>
+								<td class="td_6">
+									<?= $row['hit'] ?>
+								</td>
+							</tr>
+							<?php
+							$number--;
+						}
+						mysqli_close($conn);
+					} else {
+						?>
+
+						<tr>
+							<td colspan="6">현재 등록된 글이 없습니다.</td>
+						</tr>
+						<?php
+					}
+					?>
+
+				</tbody>
+			</table>
+			<ul id = "page_num">
+			<?php
+			if($total_record%$scale == 0){
+				$total_page = $total_record/$scale;
+			}else{
+				$total_page = ceil($total_record/$scale);
+			}
+
+			if($total_page >= 2 and $page >= 2){
+				$new_page = $page - 1;
+				echo "<li><a href = 'bd_list.html?page=$new_page'>◀이전&nbsp;</a></li>";
+			}else{
+				echo "<li>&nbsp;</li>";
+			}
+
+			for($i = 1; $i<= $total_page; $i++){
+				if($page == $i){
+					echo "<li><b>$i</b></li>";
+				}else{
+					echo "<li><a href = 'bd_list.html?page=$i'>&nbsp;$i&nbsp;</a></li>";
+				}
+			}
+
+			if($total_page >= 2 and $page != $total_page){
+				$next_page = $page + 1;
+				echo "<li><a href = 'bd_list.html?page=$next_page'>&nbsp;다음▶</a></li>";
+			}else{
+				echo "<li>&nbsp;</li>";
+			}
+
+			?>
+			<ul id="search_box">
+				<li><select name="search_key" id="search_name">
+						<option value="1">통합검색</option>
+						<option value="2">제목</option>
+						<option value="3">글쓴이</option>
+						<option value="4">파일명</option>
+						<option value="5">내용</option>
+					</select>&nbsp;
+					<input type="text" name="search_text" id="search_text">&nbsp;
+					<input type="button" value="검색" id="search">
+				</li>
+			</ul>
+			<ul class="buttons">
+				<li><button onclick="location.href='bd_list.html'" class="fontstyle">목록</button></li>
+				<li><button onclick="location.href='bd_form.html'" class="fontstyle">글쓰기</button></li>
+			</ul>
+		</div> <!-- bd_box -->
+	</section>
+	<footer>
+		<?php include "footer.html"; ?>
+	</footer>
 </body>
+
 </html>
