@@ -1,61 +1,56 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-	<meta charset="utf-8">
-	<title>MYUNGLI 실습예제</title>
-	<?php include "head.html"; ?>
-	<link rel="stylesheet" type="text/css" href="./css/bd.css">
+<head> 
+<meta charset="utf-8">
+<title>MYUNGLI 실습예제</title>
+<?php include "head.html";?>
+<link rel="stylesheet" type="text/css" href="./css/bd.css">
 </head>
+<body> 
+<header>
+    <?php include "../inc_con/header.html";?>
+</header>  
+<section class="fontstyle">
+   	<div id="bd_box">
+	    <h3 class="title">자유 게시판</h3>
+<?php
+$num = $_GET['num'];
+$page = $_GET['page'];
 
-<body>
-	<header>
-		<?php include "../inc_con/header.html"; ?>
-	</header>
+include "../inc_con/db_connect.html";
 
-	<section class="fontstyle">
-		<div id="bd_box">
-			<h3 class="title">자유 게시판</h3>
-			<?php
-			$num = $_GET['num'];
-			$page = $_GET['page'];
-			include "../inc_con/db_connect.html";
-			$sql = "select * from board where num = '$num'";
-			$result = mysqli_query($conn, $sql);
-			$row = mysqli_fetch_array($result);
+$sql = "select * from board where num='$num'";
+$result = mysqli_query($conn,$sql);
+$row = mysqli_fetch_array($result);
 
-			$row['content'] = str_replace(" ", "&nbsp;", nl2br($row['content']));
-			if ($row['file_name']) {
-				$file_size = @filesize("./data/$row[file_copied]");
-				$file_text = "▷ 첨부파일 : $row[file_name]($file_size Byte) &nbsp;&nbsp;&nbsp;&nbsp;<a href='bd_download.html?num=$num'> [저장]</a><br><br>";
-			}
-			$subject = $row['subject'];
-			$name = $row['name'];
-			$regist_day = $row['regist_day'];
-			$content = $row['content'];
+$row['content'] = str_replace(" ","&nbsp;",nl2br($row['content']));
+if($row['file_name']){
+	$file_size = @filesize("./data/$row[file_copied]");
+	$file_text = "▷ 첨부파일 :$row[file_name]($file_size Byte) &nbsp;&nbsp;&nbsp;&nbsp;<a href='bd_download.html?num=$num'>[저장]</a><br><br>";
+}else{
+	$file_text ="";
+}
 
-			$sql2 = "update board set hit = hit + 1 where num = '$num'";
-			mysqli_query($conn, $sql2);
-			mysqli_close($conn);
-			?>
-			<ul id="view_content">
-				<li>
-					<span class="col1"><b>제목 :</b> <?=$subject?></span>
-					<span class="col2"><?=$name?> | <?=$regist_day?></span>
-				</li>
-				<li><?=$file_text?><?=$content?></li>
-			</ul>
-			<ul class="buttons">
-				<li><button type="button" class="fontstyle" onclick="location.href='bd_list.html?page=<?=$page?>'">목록</button></li>
-				<li><button type="button" class="fontstyle">수정</button></li>
-				<li><button type="button" class="fontstyle">삭제</button></li>
-				<li><button onclick="location.href='bd_form.html'" class="fontstyle">글쓰기</button></li>
-			</ul>
-		</div> <!-- bd_box -->
-	</section>
-	<footer>
-		<?php include "footer.html"; ?>
-	</footer>
+$sql2 = "update board set hit=hit+1 where num='$num'";
+mysqli_query($conn,$sql2);
+?>			
+	    <ul id="view_content">
+			<li>
+				<span class="col1"><b>제목 :</b> <?=$row['subject']?></span>
+				<span class="col2"><?=$row['name']?> | <?=$row['regist_day']?></span>
+			</li>
+			<li><?=$file_text?><?=$row['content']?></li>		
+	    </ul>
+	    <ul class="buttons">
+			<li><button type='button' class="fontstyle" onclick="location.href='bd_list.html?page=<?=$page?>'">목록</button></li>
+			<li><button type='button' class="fontstyle" onclick="location.href='bd_modify_form.html?page=<?=$page?>&num=<?=$num?>'">수정</button></li>
+			<li><button type='button' class="fontstyle" onclick="location.href='bd_delete.html?page=<?=$page?>&num=<?=$num?>'">삭제</button></li>
+			<li><button type='button' onclick="location.href='bd_form.html'" class="fontstyle">글쓰기</button></li>
+		</ul>
+	</div> <!-- bd_box -->
+</section> 
+<footer>
+    <?php include "footer.html";?>
+</footer>
 </body>
-
 </html>

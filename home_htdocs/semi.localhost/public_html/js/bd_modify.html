@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<?php
+$num = $_POST['num'];
+$page = $_POST['page'];
+
+session_start();
+if(isset($_SESSION['userid'])) $userid = $_SESSION['userid'];
+else $userid = "";
+
+if(!$userid){
+    echo "<script>alert('게시판 글쓰기는 로그인 후 이용해 주세요.');history.back();</script>";
+    exit;
+}
+
+$subject = htmlspecialchars($_POST['subject'],ENT_QUOTES);
+$content = htmlspecialchars($_POST['content'],ENT_QUOTES);
+
+include "../inc_con/db_connect.html";
+$sql = "update board set subject='$subject',content='$connect' where num='$num'";
+mysqli_query($conn,$sql);
+?>
+<script>location.href='bd_list.html?page=<?=$page?>';</script>
+</body>
+</html>

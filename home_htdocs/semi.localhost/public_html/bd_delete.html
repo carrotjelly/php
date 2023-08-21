@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <?php
+    $num = $_POST['num'];
+    $page = $_POST['page'];
+    session_start();
+    if (isset($_SESSION['userid']))
+        $id = $_SESSION['userid'];
+    else
+        $id = "";
+    if (isset($_SESSION['username']))
+        $name = $_SESSION['username'];
+    else
+        $name = "";
+
+    if (!$id){
+        echo "<script>alert('로그인 후에 작성 가능합니다.'); history.back();</script>";
+        exit;
+    }
+    
+    include "../inc_con/db_connect.html";
+    $sql = "select * from board where num='$num'";
+    $result = mysqli_query($conn,$sql);
+    $row = mysqli_fetch_array($result);
+    if($row['copied_name']){
+        unlink("./data/".$row['copied_name']);
+    }
+    $sql2 = "delete from board where num = '$num'";
+    mysqli_query($conn,$sql2);
+    mysqli_close($conn);
+    ?>
+</body>
+</html>

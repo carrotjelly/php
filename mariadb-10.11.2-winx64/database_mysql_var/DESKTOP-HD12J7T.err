@@ -160,3 +160,72 @@ Version: '10.11.2-MariaDB'  socket: ''  port: 3306  mariadb.org binary distribut
 2023-08-17  9:12:06 0 [Note] Server socket created on IP: '0.0.0.0'.
 2023-08-17  9:12:06 0 [Note] C:\MES\MES\mariadb-10.11.2-winx64\mariadb-10.11.2-winx64\bin\mysqld.exe: ready for connections.
 Version: '10.11.2-MariaDB'  socket: ''  port: 3306  mariadb.org binary distribution
+2023-08-17 17:49:28 5 [Warning] Aborted connection 5 to db: 'semilocalhost' user: 'semilocalhost' host: 'localhost' (Got an error reading communication packets)
+2023-08-17 17:49:39 0 [Note] Windows service "mariaDB":  received SERVICE_CONTROL_SHUTDOWN
+2023-08-17 17:49:39 0 [Note] C:\MES\MES\mariadb-10.11.2-winx64\mariadb-10.11.2-winx64\bin\mysqld.exe (initiated by: unknown): Normal shutdown
+2023-08-17 17:49:39 0 [Note] InnoDB: FTS optimize thread exiting.
+2023-08-17 17:49:39 0 [Note] InnoDB: Starting shutdown...
+2023-08-17 17:49:39 0 [Note] InnoDB: Dumping buffer pool(s) to C:\MES\MES\mariadb-10.11.2-winx64\database_mysql_var\ib_buffer_pool
+2023-08-17 17:49:39 0 [Note] InnoDB: Buffer pool(s) dump completed at 230817 17:49:39
+2023-08-17 17:49:39 0 [Note] InnoDB: Removed temporary tablespace data file: "./ibtmp1"
+2023-08-17 17:49:39 0 [Note] InnoDB: Shutdown completed; log sequence number 173856; transaction id 386
+2023-08-17 17:49:39 0 [Note] C:\MES\MES\mariadb-10.11.2-winx64\mariadb-10.11.2-winx64\bin\mysqld.exe: Shutdown complete
+
+2023-08-18  9:11:40 0 [Note] Starting MariaDB 10.11.2-MariaDB source revision cafba8761af55ae16cc69c9b53a341340a845b36 as process 3804
+2023-08-18  9:11:40 0 [Note] InnoDB: Compressed tables use zlib 1.2.12
+2023-08-18  9:11:40 0 [Note] InnoDB: Number of transaction pools: 1
+2023-08-18  9:11:40 0 [Note] InnoDB: Using crc32 + pclmulqdq instructions
+2023-08-18  9:11:40 0 [Note] InnoDB: Initializing buffer pool, total size = 128.000MiB, chunk size = 2.000MiB
+2023-08-18  9:11:40 0 [Note] InnoDB: Completed initialization of buffer pool
+2023-08-18  9:11:40 0 [Note] InnoDB: File system buffers for log disabled (block size=4096 bytes)
+2023-08-18  9:11:40 0 [Note] InnoDB: 128 rollback segments are active.
+2023-08-18  9:11:40 0 [Note] InnoDB: Setting file './ibtmp1' size to 12.000MiB. Physically writing the file full; Please wait ...
+2023-08-18  9:11:40 0 [Note] InnoDB: File './ibtmp1' size is now 12.000MiB.
+2023-08-18  9:11:40 0 [Note] InnoDB: log sequence number 173856; transaction id 387
+2023-08-18  9:11:40 0 [Note] InnoDB: Loading buffer pool(s) from C:\MES\MES\mariadb-10.11.2-winx64\database_mysql_var\ib_buffer_pool
+2023-08-18  9:11:40 0 [Note] Plugin 'FEEDBACK' is disabled.
+2023-08-18  9:11:40 0 [Note] mysqld.exe: SSPI: using principal name 'localhost', mech 'Negotiate'
+2023-08-18  9:11:40 0 [Note] InnoDB: Buffer pool(s) load completed at 230818  9:11:40
+2023-08-18  9:11:40 0 [Note] Server socket created on IP: '::'.
+2023-08-18  9:11:40 0 [Note] Server socket created on IP: '0.0.0.0'.
+2023-08-18  9:11:40 0 [Note] C:\MES\MES\mariadb-10.11.2-winx64\mariadb-10.11.2-winx64\bin\mysqld.exe: ready for connections.
+Version: '10.11.2-MariaDB'  socket: ''  port: 3306  mariadb.org binary distribution
+2023-08-18 17:51:28 0 [Note] Windows service "mariaDB":  received SERVICE_CONTROL_SHUTDOWN
+2023-08-18 17:51:28 0 [Note] C:\MES\MES\mariadb-10.11.2-winx64\mariadb-10.11.2-winx64\bin\mysqld.exe (initiated by: unknown): Normal shutdown
+2023-08-18 17:51:28 0 [Note] InnoDB: FTS optimize thread exiting.
+2023-08-18 17:51:28 0 [Note] InnoDB: Starting shutdown...
+2023-08-18 17:51:28 0 [Note] InnoDB: Dumping buffer pool(s) to C:\MES\MES\mariadb-10.11.2-winx64\database_mysql_var\ib_buffer_pool
+2023-08-18 17:51:28 0 [Note] InnoDB: Buffer pool(s) dump completed at 230818 17:51:28
+2023-08-18 17:51:28 0 [Note] InnoDB: Removed temporary tablespace data file: "./ibtmp1"
+2023-08-18 17:51:28 0 [Note] InnoDB: Shutdown completed; log sequence number 173856; transaction id 388
+2023-08-18 17:51:28 0 [Note] C:\MES\MES\mariadb-10.11.2-winx64\mariadb-10.11.2-winx64\bin\mysqld.exe: Shutdown complete
+
+2023-08-18 18:37:14 0 [Note] Starting MariaDB 10.11.2-MariaDB source revision cafba8761af55ae16cc69c9b53a341340a845b36 as process 3764
+2023-08-18 18:37:14 0 [Note] InnoDB: Compressed tables use zlib 1.2.12
+2023-08-18 18:37:14 0 [Note] InnoDB: Number of transaction pools: 1
+2023-08-18 18:37:14 0 [Note] InnoDB: Using crc32 + pclmulqdq instructions
+2023-08-18 18:37:14 0 [Note] InnoDB: Initializing buffer pool, total size = 128.000MiB, chunk size = 2.000MiB
+2023-08-18 18:37:14 0 [Note] InnoDB: Completed initialization of buffer pool
+2023-08-18 18:37:14 0 [Note] InnoDB: File system buffers for log disabled (block size=4096 bytes)
+2023-08-18 18:37:14 0 [Note] InnoDB: 128 rollback segments are active.
+2023-08-18 18:37:14 0 [Note] InnoDB: Setting file './ibtmp1' size to 12.000MiB. Physically writing the file full; Please wait ...
+2023-08-18 18:37:14 0 [Note] InnoDB: File './ibtmp1' size is now 12.000MiB.
+2023-08-18 18:37:14 0 [Note] InnoDB: log sequence number 173856; transaction id 387
+2023-08-18 18:37:14 0 [Note] InnoDB: Loading buffer pool(s) from C:\MES\MES\mariadb-10.11.2-winx64\database_mysql_var\ib_buffer_pool
+2023-08-18 18:37:14 0 [Note] Plugin 'FEEDBACK' is disabled.
+2023-08-18 18:37:14 0 [Note] mysqld.exe: SSPI: using principal name 'localhost', mech 'Negotiate'
+2023-08-18 18:37:14 0 [Note] InnoDB: Buffer pool(s) load completed at 230818 18:37:14
+2023-08-18 18:37:14 0 [Note] Server socket created on IP: '::'.
+2023-08-18 18:37:14 0 [Note] Server socket created on IP: '0.0.0.0'.
+2023-08-18 18:37:14 0 [Note] C:\MES\MES\mariadb-10.11.2-winx64\mariadb-10.11.2-winx64\bin\mysqld.exe: ready for connections.
+Version: '10.11.2-MariaDB'  socket: ''  port: 3306  mariadb.org binary distribution
+2023-08-18 21:48:58 0 [Note] Windows service "mariaDB":  received SERVICE_CONTROL_SHUTDOWN
+2023-08-18 21:48:58 0 [Note] C:\MES\MES\mariadb-10.11.2-winx64\mariadb-10.11.2-winx64\bin\mysqld.exe (initiated by: unknown): Normal shutdown
+2023-08-18 21:48:58 0 [Note] InnoDB: FTS optimize thread exiting.
+2023-08-18 21:48:58 0 [Note] InnoDB: Starting shutdown...
+2023-08-18 21:48:58 0 [Note] InnoDB: Dumping buffer pool(s) to C:\MES\MES\mariadb-10.11.2-winx64\database_mysql_var\ib_buffer_pool
+2023-08-18 21:48:58 0 [Note] InnoDB: Buffer pool(s) dump completed at 230818 21:48:58
+2023-08-18 21:48:59 0 [Note] InnoDB: Removed temporary tablespace data file: "./ibtmp1"
+2023-08-18 21:48:59 0 [Note] InnoDB: Shutdown completed; log sequence number 173856; transaction id 388
+2023-08-18 21:48:59 0 [Note] C:\MES\MES\mariadb-10.11.2-winx64\mariadb-10.11.2-winx64\bin\mysqld.exe: Shutdown complete
+

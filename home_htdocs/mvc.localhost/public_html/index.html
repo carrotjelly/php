@@ -3,6 +3,18 @@
 <h1>
 It works! mvc
 </h1>
-<?=phpinfo();?>
+<?php
+require_once("$_SERVER[DOCUMENT_ROOT]/../lib/lib_road.inc");
+
+$lib -> lib_fun("message");
+$message->message_("안녕하세요!","//location.href='http://naver.com';","noexit");
+
+echo "<br>zzzzzzzzz<br>";
+$message->nomessage_("location.href='http://semi.localhost';","exit");
+
+
+
+
+?>
 </body>
 </html>

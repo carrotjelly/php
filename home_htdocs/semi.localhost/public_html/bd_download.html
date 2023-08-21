@@ -1,0 +1,23 @@
+<?php
+$num = $_GET['num'];
+
+include "../inc_con/db_connect.html";
+
+$sql = "select * from board where num='$num'";
+$result = mysqli_query($conn,$sql);
+$row = mysqli_fetch_array($result);
+
+$file_path = "./data/".$row['file_copied'];
+
+if(file_exists($file_path)){
+    $fp = fopen($file_path,"rb");
+    Header("Content-type:application/x-msdownload");
+    Header("Content-Length:".@filesize($file_path));
+    Header("Content-Disposition:attachment; filename=".$row['file_name']);
+    Header("Content-Transfer-Encoding:binary");
+    Header("Content-Description:File Transfer");
+    Header("Expires:0");
+    fpassthru($fp);
+    fclose($fp);
+}
+?>
